@@ -14,11 +14,13 @@ def top_n(items, n):
     for i in range(n):
         for j in range(len(items)-1-i):
 
-            if items[j] > item[j+1]:
+            if items[j] > items[j+1]:
                 items[j], items[j+1] = items[j+1], items[j]
    
     #get last two items
     top_n = items[-n:]
 
     # return in descending order
-    return top_n[::-1]
+    print( top_n[::-1])
+top_n([4,6,7,8,9,], 3)
+print('Hello world')
